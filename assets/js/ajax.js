@@ -23,7 +23,7 @@ var arrSingers = ['Mariah Carey','Beyonce','Micheal Jackson','Taylor Swift','Pri
 
             $('#buttons').on('click', "button", function() {
                 var p = $(this).data('person');
-                var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + p + "&api_key=dc6zaTOxFJmzC&limit=10";
+                var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + p + "&api_key=dc6zaTOxFJmzC&limit=10";
 
                 $.ajax({
                         url: queryURL,
